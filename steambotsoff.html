@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>STEAMbots</title>
+<meta charset="UTF=8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Baloo Paaji' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Hind Madurai" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body {
+	margin: 0;
+	font-family: Baloo Paaji, Montserrat;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	background-color: #fff;
+}
+  
+.abouttitle2 {
+	color: #f4623a;
+	font-size: 32px;
+	font-family: Baloo Paaji;
+	text-align: center;
+	padding: 20px;
+	padding-bottom: 30px;
+}
+.abouttitle3{
+	color: #fff;
+	font-size: 32px;
+	font-family: Baloo Paaji;
+	text-align: center;
+	padding: 20px;
+	padding-bottom: 30px;
+} 
+
+
+
+.about{
+	background-color: #f4623a;
+}
+
+.author {
+	color: #000;
+	font-size: 24px;
+	font-family: Montserrat;
+}
+
+p.small {
+  	line-height: 1.5;
+  	color: #fff;
+  	font-size: 16px;
+  	font-family: Hind Madurai;
+  	text-align: center, justify;
+  	padding:10px;
+}
+.icon {
+	align-content: center;
+}
+.lessonplans{
+	color: #f4623a;
+	font-size: 24px;
+	font-family: Montserrat;
+	text-align: center;
+}
+.lessonparagraph{
+	color: #fff;
+	font-size: 16px;
+	font-family: Hind Madurai;
+	padding-left: 350px;
+	padding-right: 350px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.gallerytitle{
+	color: #f4623a;
+	font-size: 32px;
+	font-family: Baloo Paaji;
+	text-align: center;
+}
+.lessons{
+	background-color:#212529;
+}
+.lessonheading{
+	font-family: Montserrat;
+	font-size: 18px;
+	text-align:center;
+	padding:0px;
+}
+#lessons{
+	height: 100vh;
+	min-height: 40rem; 
+	padding-bottom: 0; 
+}
+.updates{
+	font-family: Montserrat;
+	font-size: 18px;
+	padding-left: 350px;
+	padding-right: 350px;
+	text-align: center;
+	padding-bottom: 20px;
+	color: #fff;
+}
+.contact{
+	background-color:#f4623a;
+}
+
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: white;
+}
+#gallery{
+	height: 100vh;
+	min-height: 40rem; 
+	padding-bottom: 0; 
+}
+/* Header CSS*/ 
+header.masthead {
+	height: 100vh;
+	min-height: 40rem; 
+	padding-bottom: 0; 
+}
+header.masthead { 
+	background: #212529;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+}
+header.masthead h1 {
+	font-size: 3.5rem;
+}
+header.masthead p {
+	font-size: 1.15rem;
+}
+/* Container Elements*/
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.row {
+	display: flex;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding: 30px;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.p-0 {
+    padding: 0!important;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.no-gutters>[class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.col-lg-10 {
+	-webkit-box-flex: 0;
+	flex: 0 0 83.33333%;
+	max-width: 83.33333%;
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-lg-3, .col-md-6, .col-sm-6
+{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-lg-3, .col-lg-4 {
+    -webkit-box-flex: 0; 
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.col-md-6, .col-sm-6 {
+    -webkit-box-flex: 0; 
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-lg-8 {
+	-webkit-box-flex: 0; 
+	flex: 0 0 66.66667%;
+	max-width: 66.66667%;
+}
+/* Align Items*/
+.align-self-end { 
+	align-self: flex-end!important;
+}
+.align-items-center {
+	align-items: center!important;
+}
+.justify-content-center {
+	justify-content: center!important;
+}
+.align-self-end {
+	align-self: flex-end!important;
+}
+.align-self-baseline { 
+	align-self: baseline!important;
+}
+.h-100 {
+	height: 100%!important;
+}
+/* Text Elements*/
+
+.text-center {
+	text-align: center!important;
+}
+.text-white {
+	color: #fff!important;
+}
+.font-weight-bold {
+	font-weight: 1000!important;
+}
+.text-uppercase {
+	text-transform: uppercase!important;
+	font-size:100px!important;
+}
+.text-white-75 {
+	color: rgba(255,255,255,.75);
+}
+.text-primary {
+    color: #f4623a!important;
+}
+.text-muted {
+    color: #6c757d!important; 
+    font-family: Hind Madurai;
+    margin-left:30px;
+  	text-align: justify;
+}
+.text-muted-white {
+    color: #fff!important; 
+    font-family: Hind Madurai;
+    margin-left:30px;
+  	text-align: justify;
+  	font-size: 16px;
+}
+.font-weight-light {
+	font-weight: 300!important;
+	font-size:20px!important;
+}
+.h4 {
+	color:#f4623a;
+	font-size: 1.5rem;
+}
+/* Margin Elements*/
+.mt-4, .my-4 {
+	margin-top: 1.5rem!important;
+}
+.mb-2, .my-2 {
+    margin-bottom: .5rem!important;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+.mb-4, .my-4 {
+	margin-bottom: 1.5rem!important;
+}
+.mb-5, .my-5 {
+	margin-bottom: 1rem!important;
+}
+.mt-0, .my-0 {
+    margin-top: 0!important;
+}
+hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0;
+	border-top: 1px solid rgba(0,0,0,.1);
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+hr.divider {
+	max-width: 3.25rem;
+	border-width: .2rem;
+	border-color: #f4623a;
+}
+hr.divider-white {
+	max-width: 3.25rem;
+	border-width: .2rem;
+	border-color: #fff;
+}
+
+.fa-4x {
+    font-size: 4em;
+}
+/* Button Elements*/
+.btn-xl {
+	padding: 1.25rem 2.25rem;
+	font-size: .85rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 10rem;
+	text-decoration: none;
+}
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+.btn-primary {
+	color: #fff;
+	background-color: #f4623a;
+	border-color: #f4623a;
+}
+.btn:hover { 
+	text-decoration: none;
+}
+/* NAV Elements*/
+.navbar {
+	overflow: hidden;        
+	font-family: Baloo Paaji;
+	font-size: 16px;
+	-webkit-box-align: center;
+	display: flex;
+	padding: .5rem 1rem;
+	box-shadow: none;
+	align-items: center;
+	background-color: transparent;
+}
+.navbar a {
+	float: left;
+	display: block;
+	color: #F1F1D4;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+} 
+.navbar img {
+  border-radius: 30%;
+  height: 50px;
+  width: 50px;
+}
+.navbar-collapse a:hover {
+  background-color: #f4623a;
+  color: #fff;
+}
+.navbar-brand { 
+	font-weight: 700;
+	display: inline-block;
+	padding-top: .3125rem;
+	padding-bottom: .3125rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+	line-height: inherit; 
+	white-space: nowrap;  
+  
+}
+.navbar-brand>img {
+  padding: 2px 8px;
+}
+.fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+.navbar-collapse { 
+	display: flex!important; 
+	flex-basis: auto;
+}
+.navbar-collapse {
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	-webkit-box-align: center;
+	align-items: center;
+}
+.navbar-nav {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal; 
+	flex-direction: row;
+}
+.navbar-scrolled {
+	-webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+	background-color: #fff;
+}
+.ml-auto, .mx-auto {
+	margin-left: auto!important;
+}
+.navbar-nav {
+	display: -webkit-box; 
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	flex-direction: row;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+.navbar-nav .nav-item .nav-link {
+	color: rgba(255,255,255,.7);
+	padding: 0 1rem;
+}
+/* Section About */
+.about-section, .inv-section {
+    padding: 8rem 0;
+}
+.about-row {
+    display: flex;
+    width:60%;
+    padding: 20px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+/* Section Inventor*/
+.inv-section {
+	background-color: #f4623a;
+}
+.flask1 {
+	flex: 0 0  50%;
+	max-width: 50%;
+	margin-left: auto!important;
+	color:#212529;
+}
+.flask2 {
+	flex: 0 0 50%;
+	max-width: 50%;
+	margin-right: auto!important;
+	color:#212529;
+}
+/* Section Gallery*/
+.gallery-box {
+    position: relative;
+    display: block;
+}
+#gallery a {
+    color: #f4623a;
+    text-decoration: none;
+    background-color: transparent;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+#gallery img {
+    vertical-align: middle;
+    border-style: none;
+}
+#gallery .container-fluid .gallery-box .gallery-box-caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(244,98,58,.9);
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+    text-align: center;
+}
+.gallery-box .gallery-box-caption .gallery-category {
+    font-family: "Merriweather Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.gallery-row {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+</style>
+</head>
+
+<body>
+	<div class="navbar fixed-top">
+		 <div class="container">
+		    <a class="navbar-brand" href="#page-top"><img src="STEAMbots Logobot3.png" class="logo"/></a>
+		 	<div class="collapse navbar-collapse">
+		        <ul class="navbar-nav ml-auto">
+		          <li class="nav-item">
+		            <a class="nav-link" href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+		          </li>
+		          <li class="nav-item">
+		            <a class="nav-link" href="#about"><i class="fa fa-fw fa-question-circle"></i>About</a>
+		           </li>
+		           <li class="nav-item">
+		            <a class="nav-link" href="#gallery"><i class="fa fa-fw fa-camera"></i>Gallery</a>
+		          </li>
+		           <li class="nav-item">
+		            <a class="nav-link" href="#lessons"><i class="fa fa-fw fa-book"></i>Lessons</a>
+		          </li>
+		           <li class="nav-item">
+		            <a class="nav-link" href="#contact"><i class="fa fa-fw fa-clipboard"></i>Join Today</a>
+		          </li>
+		          </li>
+		        </ul>
+		      </div>
+		</div>
+		
+	</div> 
+	<section id="home">
+		<header class="masthead">
+		    <div class="container h-100">
+		      <div class="row h-100 align-items-center justify-content-center text-center">
+		        <div class="col-lg-10 align-self-end">
+		          <h1 class="text-uppercase text-white font-weight-bold">STEAMbots</h1>
+	              <h4 class="text-white-75 font-weight-light mb-5">Bringing STEAM to the Next Generation</h4>
+		          <hr class="divider my-4">
+		        </div>
+		        <div class="col-lg-8 align-self-baseline">
+	         		<a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+	       		</div>
+		        
+		      </div>
+		    </div>
+	  	</header>
+	</section>
+	<section class="about-section" id="about">
+	    <div class="container h-100">
+	      <h2 class="text-center h4 mt-0">About STEAMbots</h2>
+	      <hr class="divider my-4">
+	       
+	      <div class="about-row">
+	        <div class="col-lg-3 col-md-6 text-center">
+	          <div class="mt-5">
+	            <i class="fa fa-4x fa-fw fa-wrench text-primary mb-4"></i>
+	            <h3 class="h4 mb-2">STEAMbots Program</h3>
+	            <p class="text-muted mb-0">Started by two high school students of Gretchen Whitney High School, STEAMbots is a program dedicated to spreading STEAM throughout our community. At a STEAMbots meet, students are able to interact with others from 2nd to 6th grade. Through specially designed activities and discussions, students are able to see the impact of STEAM in our live and the significance it holds. Our STEAMbots gather once a month in the Cerritos Library's Skyline Room (see contact for more information)!Every STEAMbot carries the core values of a STEAMbot: Science, Technology, Engineering, Arts, Mathematics, Bravery, Organization, and Tenacity. We hope to see these values everywhere we walk!</p>
+	          </div>
+	        </div>
+	        <div class="col-lg-3 col-md-6 text-center">
+	          <div class="mt-5">
+	            <i class="fa fa-4x fa-user text-primary mb-4"></i>
+	            <h3 class="h4 mb-2">Our Mission</h3>
+	            <p class="text-muted mb-0">STEAMbots strives to teach the wonders of STEAM with fun and challenging 
+						activites while building strong relationships between student to student.
+						Our goal is to make STEAM an active part of our lives every minute of every
+					day. We ultimately hope that STEAMbots opens students' eyes to future careers in STEAM, which is currently underlooked by many. STEAMing up the world will unfog our futures!</p>
+	          </div>
+	        </div>
+	        <div class="col-lg-3 col-md-6 text-center">
+	          <div class="mt-5">
+	            <i class="fa fa-4x fa-pencil text-primary mb-4"></i>
+	            <h3 class="h4 mb-2">From the Gurus</h3>
+	            <p class="text-muted mb-0">Hey STEAMbots! Hope you've been STEAMing through your past weeks! Our first meet is on March 26th, 2019 at the Cerritos Library's Skyline Room from 4:30-5:30 pm! See you there!</p>
+	          </div>
+	        </div>
+	      </div>
+	      
+	    </div>
+  </section>
+ <section class="inv-section" id="about">
+	    <div class="container h-100">
+	      <h2 class="text-center text-white-75 mt-0">STEAMbots Inventors</h2>
+	      <hr class="divider-white my-4"/>
+		    <div class="row">
+				<div class="flask1 text-center">
+					<i class="fa fa-fw fa-user-circle text-white-75 fa-5x"></i>
+					<div class="author">
+						<h4 class="text-white-75">Saadhvi Narayanan</h4>
+						<p class="text-muted-white mb-0">Saadhvi Narayanan is a freshmen attending Whitney High School. 
+						As her academic journey continues, she plans to become a biochemical
+						engineer to help generate medications that may make side affects less 
+						costly. Other than studying biology, Saadhvi loves to read fiction novels 
+						and eat her mother's Indian food. She has a passion for playing
+						basketball and swimming as well as just being around her friends. Saadhvi
+						revels in STEAM and is eager to help it become the great change in the
+						world today.  </p>
+					</div>
+				</div>
+				<div class="flask2 text-center">
+					<i class="fa fa-fw fa-user-circle text-white-75 fa-5x"></i>
+					<div class="author">
+						<h4 class="text-white-75">Swetha Chidambara Ganesh</h4>
+						<p class="small"> </p>
+					</div>
+				</div>
+			</div>
+	  </div>
+	</section>
+	<section id="gallery">
+    <div class="container-fluid p-0">
+
+	  <h2 class="text-center h4 mt-0" style="padding-top:30px">Our Growing Scientists</h2>
+	  <hr class="divider my-4"/>
+	  <h5 class="text-muted text-center">STEAMbots grow everyday not just in lessons, but in their daily lives as well. The latest accomplishments of our STEAMbots:</h4>
+      <div class="gallery-row no-gutters">
+        <div class="col-lg-4 col-sm-6">
+          <a class="gallery-box" href="img-1.jpg">
+            <img class="img-fluid" src="img-1.jpg" alt="">
+            <div class="gallery-box-caption">
+              <div class="gallery-category text-white-50">
+                Category
+              </div>
+              <div class="gallery-name">
+                gallery Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+         <a class="gallery-box" href="img-1.jpg">
+            <img class="img-fluid" src="img-1.jpg" alt="">
+            <div class="gallery-box-caption">
+              <div class="gallery-category text-white-50">
+                Category
+              </div>
+              <div class="gallery-name">
+                gallery Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="gallery-box" href="img-1.jpg">
+            <img class="img-fluid" src="img-1.jpg" alt="">
+            <div class="gallery-box-caption">
+              <div class="gallery-category text-white-50">
+                Category
+              </div>
+              <div class="gallery-name">
+                gallery Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="gallery-box" href="img-1.jpg">
+            <img class="img-fluid" src="img-1.jpg" alt="">
+            <div class="gallery-box-caption">
+              <div class="gallery-category text-white-50">
+                Category
+              </div>
+              <div class="gallery-name">
+                gallery Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="gallery-box" href="img-1.jpg">
+            <img class="img-fluid" src="img-1.jpg" alt="">
+            <div class="gallery-box-caption">
+              <div class="gallery-category text-white-50">
+                Category
+              </div>
+              <div class="gallery-name">
+                gallery Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="gallery-box" href="img-1.jpg">
+            <img class="img-fluid" src="img-1.jpg" alt="">
+            <div class="gallery-box-caption p-3">
+              <div class="gallery-category text-white-50">
+                Category
+              </div>
+              <div class="gallery-name">
+                gallery Name
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+	 
+  <div class="lessons">
+		<section id="lessons">
+			<div class="abouttitle2">
+				<div class="icon">
+					<i class="fa fa-fw fa-rocket"></i>
+				</div>
+				<h>Explorers, To The Moon!</h>
+			</div>
+			<p class="lessonparagraph">Want to know how and what STEAMbots experiment and learn everyday? Check out the latest lesson described below!</p>
+			<div class="lessonplans">
+				<h>S for Science: March 26, 2019</h>
+				<div class="lessonheading">
+				<p class="lessonparagraph">In this lesson, students will learn what the scientific method is and how to apply it into their daily lives.</p>
+				<h class="lessonheading">Section I</h>
+				<p class="lessonparagraph">We will begin the class period by asking whether the students know what the scientific method is through the following question: Every scientists uses the scientific method... but what is it? After receiving responses from the students, we will explain the steps of the scientific method and a brief significance of each step. We will check to see the if the students understand by having them fill out a worksheet with a diagram of the scientific method.</p>
+				<h class="lessonheading">Activity</h>
+				<p class="lessonparagraph">The students will be told the following scenario: You are a owner of the most popular boat company in ages. Your boats are so great, that the President has asked you to build him a yacht that will host a grand party for his birthday with many people. He wants to invite as many people as possible. He has asked you to model your boat with the following ​materials: 2 sheets of foil, 3 popsicle sticks, and masking tape​​. The boat will be placed in a tub of water. Your task is to put as many people (M&Ms) into the boat as possible without the inside of the boat getting wet or the boat sinking.
+				Students will be given 35 minutes to create a boat. During this time, they may test their boat as much as it is needed. They are to use the scientific method while building their boat. Assistance will be given as needed.</p>
+				<h class="lessonheading">Section II</h>
+				<p class="lessonparagraph">After the students are finished with the activity, we will explain to them that like this, the scientific method is used to create much of the technology we see today. For example, the first light bulb was created by Edison after much trial and error, as is practiced in the scientific method. We will each student to give examples of where they could use the scientific method in their lives.</p>
+		</section>	
+	</div>
+	<section id="contact">
+		<div class="contact">
+			<div class="abouttitle3">
+			<div class="icon">
+					<i class="fa fa-fw fa-pencil"></i>
+			</div>
+			<h>Become a STEAMbot</h>
+			<div class="row">
+				<div class="flask1 text-center">
+					<i class="fa fa-fw fa-flask fa-5x"></i>
+					<div class="author">
+						<h4>Want to be a STEAMbot?</h4>
+						<p class="small"> Contact the Cerritos Library staff or sign up at the main desk of the Cerritos Library!</p>
+						<h4>Address: 18025 Bloomfield Ave, Cerritos, CA 90703, USA</h4>
+						<h4>Phone: +1 562-916-1350</h4>
+					</div>
+				</div>
+				<div class="flask2 text-center">
+					<i class="fa fa-fw fa-check-square fa-5x"></i>
+					<div class="author">
+						<h4>Want to be a volunteer?</h4>
+						<p class="small"> Contact Saadhvi Narayanan or Swetha Chidambara Ganesh at _________@gmail.com. We'll get back to you and make sure you can help our STEAMbots thrive!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="footer">
+		<div class="author">
+			<p class="aboutparagraph"><i class="fa fa-fw fa-copyright"></i>Copyright 2019</p>
+		</div>
+	</div>
+
+</body>
+</html>
